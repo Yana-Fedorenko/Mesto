@@ -23,17 +23,10 @@
       </div>
       <button class="profile__add-button" type="button"></button>
     </section>
-
     <section class="places page__section">
       <ul class="places__list">
       </ul>
     </section>
-    <!-- elements-->
-<!--    <section class="elements">-->
-<!--      <ul class="cards">-->
-<!--      </ul>-->
-<!--    </section>-->
-
   </main>
   <footer class="footer page__section">
     <p class="footer__copyright">
@@ -72,15 +65,14 @@
 </div>
 <script src="./scripts/cards.js"></script>
 <script src="./scripts/index.js" defer></script>
-
-<!-- template-->
-<template class="template">
-  <li class="card__item card">
-    <button class="card__delete-button" type="button"></button>
-    <img class="card__img" alt="#" src="./">
-    <div class="card__bottom">
-      <h3 class="card__title"></h3>
-      <button class="card__like-button cards__like" type="button"></button>
+<template id="card-template">
+  <li class="places__item card">
+    <img class="card__image" src="" alt="" />
+    <button type="button" class="card__delete-button"></button>
+    <div class="card__description">
+      <h2 class="card__title">
+      </h2>
+      <button type="button" class="card__like-button"></button>
     </div>
   </li>
 </template>
